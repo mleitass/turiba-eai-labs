@@ -1,0 +1,56 @@
+# Enterprise Continuous Application Software Integration Labs
+
+This repository contains practical tasks and labs for students at **Turiba University** enrolled in the course **"Enterprise Continuous Application Software Integration"**.
+
+The curriculum and exercises are based on the foundational work of Gregor Hohpe and Bobby Woolf in *Enterprise Integration Patterns*.
+
+## Course Overview
+
+The primary goal of these labs is to provide hands-on experience with:
+- **Enterprise Integration Patterns (EIP)**: Implementing core patterns like Splitter, Aggregator, Content-Based Router, etc.
+- **Message-Oriented Middleware**: Working with message brokers like RabbitMQ.
+- **Microservices Architecture**: Building and orchestrating distributed services.
+- **Containerization**: Using Docker and Docker Compose for reproducible environments.
+
+## Available Labs
+
+| Session | Topic | Description | Link |
+|:-------:|:------|:------------|:-----|
+| **3** | **EIP Routing** | Implement Splitter, Content-Based Router, and Aggregator patterns using RabbitMQ and Python. | [Go to Lab](./session-3-routing-lab) |
+
+> *More labs will be added as the course progresses.*
+
+## Prerequisites
+
+To successfully run these labs, you will need the following tools installed on your machine:
+
+1.  **Docker & Docker Compose**: Essential for running the message broker and microservices environments.
+    - [Get Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2.  **Git**: To clone this repository.
+    - [Get Git](https://git-scm.com/downloads)
+3.  **HTTP Client**: For testing APIs (e.g., `curl`, Postman, or Insomnia).
+4.  **(Optional) Python 3.9+**: If you wish to run services locally outside of Docker for debugging.
+
+## Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-org/turiba-eai-labs.git
+    cd turiba-eai-labs
+    ```
+
+2.  **Navigate to a specific lab directory:**
+    ```bash
+    cd session-3-routing-lab
+    ```
+
+3.  **Follow the `README.md` instructions in that specific directory** to start the environment and complete the tasks.
+
+## References
+
+- **[Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/)**: The official website for the patterns used in this course.
+- **[RabbitMQ Tutorials](https://www.rabbitmq.com/getstarted.html)**: Excellent resources for understanding the message broker.
+- **[Docker Documentation](https://docs.docker.com/)**: Guides for containerization.
+
+---
+*Turiba University - Faculty of Information Technologies*
