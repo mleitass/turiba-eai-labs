@@ -58,6 +58,16 @@ flowchart TD
 | **Digital Worker** | Processes digital items | Python |
 | **Aggregator Service** | Collects results, produces final status | Python |
 
+## Where to start (per-service activities)
+
+Each service folder contains an activity `README.md` describing what students must implement and how to verify it.
+
+1. [`order-api/README.md`](order-api/README.md) — API + validation + correlation propagation
+2. [`router-service/README.md`](router-service/README.md) — Splitter + Content-Based Router rules
+3. [`inventory-worker/README.md`](inventory-worker/README.md) — physical processing + failure simulation
+4. [`digital-worker/README.md`](digital-worker/README.md) — digital + subscription processing
+5. [`aggregator-service/README.md`](aggregator-service/README.md) — aggregation + timeout + final status
+
 ## Message Queues
 
 | Queue | Purpose |
