@@ -9,9 +9,35 @@ import json
 import uuid
 import pika
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
+
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
+
+
+# Swagger UI (interactive API docs)
+# - UI:   GET /docs
+# - Spec: GET /openapi.yaml
+SWAGGER_URL = '/docs'
+API_URL = '/openapi.yaml'
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': 'EIP Routing Lab - Order API'
+    },
+)
+app.register_blueprint(swaggerui_blueprint)
+
+
+@app.route('/openapi.yaml', methods=['GET'])
+def openapi_spec():
+    """Serve the OpenAPI specification used by Swagger UI."""
+    return send_file(
+        os.path.join(app.root_path, 'openapi.yaml'),
+        mimetype='application/yaml',
+    )
 
 
 def get_rabbitmq_connection():

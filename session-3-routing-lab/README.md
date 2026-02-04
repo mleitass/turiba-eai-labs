@@ -80,13 +80,21 @@ flowchart TD
 
 The Order API is documented using OpenAPI 3.0. See [`order-api/openapi.yaml`](order-api/openapi.yaml) for the full specification.
 
+When running via Docker Compose, open interactive Swagger UI at:
+
+- http://localhost:8080/docs
+
+The raw OpenAPI spec is available at:
+
+- http://localhost:8080/openapi.yaml
+
 **Endpoints:**
 | Method | Path | Description |
 |--------|------|-------------|
 | `POST` | `/orders` | Submit a new order for processing |
 | `GET` | `/health` | Health check endpoint |
 
-You can view the API documentation interactively using [Swagger Editor](https://editor.swagger.io/) by pasting the contents of `openapi.yaml`.
+Swagger UI also lets you execute requests directly from the browser ("Try it out").
 
 ## Prerequisites
 
