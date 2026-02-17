@@ -14,9 +14,10 @@ The primary goal of these labs is to provide hands-on experience with:
 
 ## Available Labs
 
-| Session | Topic | Description | Link |
-|:-------:|:------|:------------|:-----|
-| **3** | **EIP Routing** | Implement Splitter, Content-Based Router, and Aggregator patterns using RabbitMQ and Python. | [Go to Lab](./session-3-routing-lab) |
+| Session | Topic | Description | Due Date | Link |
+|:-------:|:------|:------------|:---------|:-----|
+| **1** | **Data Integration & Schema Transformation** | Transform different order formats (Web, Mobile, B2B) into a canonical schema using Node-RED. | **February 27th** | [Go to Lab](./practice-01-starter) |
+| **3** | **EIP Routing** | Implement Splitter, Content-Based Router, and Aggregator patterns using RabbitMQ and Python. | TBD | [Go to Lab](./session-3-routing-lab) |
 
 > *More labs will be added as the course progresses.*
 
